@@ -1,0 +1,9 @@
+clc;
+clear all;
+t=[0:pi/1000:2*pi];
+a=input('a = ');
+n=input('n = ');
+x=a*cos(t).^n;
+y=a*sin(t).^n;
+plot(x,y);
+title(['内摆线: a = ',num2str(a),', n = ',num2str(n)]);
